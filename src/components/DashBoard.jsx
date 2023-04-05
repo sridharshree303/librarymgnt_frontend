@@ -3,7 +3,7 @@ import './DashBoard.css';
 
 export default function DashBoard() {
     return (
-        <div className=''>
+        <div className='display-3'>
             DashBoard
         </div>
     )

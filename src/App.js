@@ -4,6 +4,16 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DashBoard from './components/DashBoard';
 import Header from './components/Header';
 import SideMenu from './components/SideMenu';
+import HomePage from './components/HomePage';
+import ListAllBooks from './components/library/ListAllBooks';
+import Librarians from './components/library/Librarians';
+import BooksIssuedByLibrarian from './components/library/BooksIssuedByLibrarian';
+import SearchBook from './components/book/SearchBook';
+import AddBook from './components/book/AddBook';
+import AddAuthor from './components/book/AddAuthor';
+import AuthorBooks from './components/book/AuthorBooks';
+import StudentLoansByID from './components/student/StudentLoansByID';
+import AddStudent from './components/student/AddStudent';
 
 //------------- class component --------------------
 class App extends Component {
@@ -12,6 +22,7 @@ class App extends Component {
     return (
       <>
         <div className='App'>
+          <Router>
           <div>
             <Header/>
           </div>
@@ -21,15 +32,31 @@ class App extends Component {
                 <SideMenu />
               </div>
               <div className='col-10 sectionTwo' style={{ backgroundColor: 'white' }}>
-                <h1>Display</h1>
-                <Router>
                   <Routes>
-                    <Route path='/' element={<DashBoard />} />
+                    <Route path='/' exact element={<HomePage/>}/>
+                    <Route path='/dashboard' element={<DashBoard/>} />
+
+                    {/* ---------librarian-------- */}
+                    <Route path='/library/allbooks' element={<ListAllBooks/>}/>
+                    <Route path='/library/librarian' element={<Librarians/>}/>
+                    <Route path='/library/booksissued' element={<BooksIssuedByLibrarian/>}/>
+                    
+                    {/* ---------- Books ----------- */}
+                    <Route path='/book/search' element={<SearchBook/>}/>
+                    <Route path='/book' element={<AddBook/>}/>
+                    
+                    {/* ----------Author------------ */}
+                    <Route path='/author' element={<AddAuthor/>}/>
+                    <Route path='/author/search' element={<AuthorBooks/>}/>
+
+                    {/* ----------Student------------ */}
+                    <Route path='/student' element={<AddStudent/>}/>
+                    <Route path='/student/search' element={<StudentLoansByID/>}/>
                   </Routes>
-                </Router>
               </div>
             </div>
           </div>
+          </Router>
         </div>
       </>
     )

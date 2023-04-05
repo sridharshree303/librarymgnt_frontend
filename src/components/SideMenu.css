@@ -21,15 +21,17 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: unset;
     padding: 5px 40px;
+    border: none;
+    outline: none;
 }
 
 .NoColor:hover{
-    border-color: rgb(9, 89, 143);
+    border-color: white;
 }
 
 .dropdown-menu{
     background-color: #005A9C;
-    padding: 10px 15px 15px 10px;
+    padding: 10px 20px 15px 20px;
     font-size: larger;
     font-weight: unset;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -39,4 +41,6 @@
 .dropdown-item{
     color: aliceblue;
     border-radius: 5px;
+    padding: 5px 5px 10px 5px;
 }
+
