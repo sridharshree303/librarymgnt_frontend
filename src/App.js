@@ -14,6 +14,8 @@ import AddAuthor from './components/book/AddAuthor';
 import AuthorBooks from './components/book/AuthorBooks';
 import StudentLoansByID from './components/student/StudentLoansByID';
 import AddStudent from './components/student/AddStudent';
+import TakeBook from './components/bookloans/TakeBook';
+import BookLoanTrasactions from './components/bookloans/BookLoanTrasactions';
 
 //------------- class component --------------------
 class App extends Component {
@@ -52,6 +54,11 @@ class App extends Component {
                     {/* ----------Student------------ */}
                     <Route path='/student' element={<AddStudent/>}/>
                     <Route path='/student/search' element={<StudentLoansByID/>}/>
+
+                    {/* ---------- Book loans ---------- */}
+                    <Route path='/bookloan' element={<TakeBook/>}/>
+                    <Route path='/bookloan/all' element={<BookLoanTrasactions/>}/>
+
                   </Routes>
               </div>
             </div>
