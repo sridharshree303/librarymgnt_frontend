@@ -33,7 +33,7 @@ class App extends Component {
               <div className='col-2 sectionOne' style={{ backgroundColor: '#005A9C' }}>
                 <SideMenu />
               </div>
-              <div className='col-10 sectionTwo' style={{ backgroundColor: 'white' }}>
+              <div className='col-10 sectionTwo' style={{ backgroundColor: '#F0F0F0' }}>
                   <Routes>
                     <Route path='/' exact element={<HomePage/>}/>
                     <Route path='/dashboard' element={<DashBoard/>} />
