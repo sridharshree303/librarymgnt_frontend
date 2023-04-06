@@ -48,7 +48,7 @@ const StudentLoansByID = () => {
     <div>
       <div className='card' id='cardTitle'>
         <div className='card-body'>
-          <h1 className='display-6 card-title'> Search Books by Student :</h1>
+          <h1 className='display-6 card-title'> Books loan's by Student :</h1>
           <hr />
         </div>
 
