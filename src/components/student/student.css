@@ -1,0 +1,16 @@
+.table{
+    /* width: 80ch; */
+    /* margin-left: 50px; */
+}
+
+.textBox{
+
+}
+
+#cardTitle{
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+}

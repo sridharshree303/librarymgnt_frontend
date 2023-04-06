@@ -34,8 +34,7 @@ const SideMenu = () => {
       <div className='dropend'>
         <button className='btn NoColor dropend dropdown-toggle' type='button' id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Student</button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a className="dropdown-item" href="/student">Add Student</a></li>
-          <li><a className="dropdown-item" href="/student">List of Students</a></li>
+          <li><a className="dropdown-item" href="/student">Student's</a></li>
           <li><a className="dropdown-item" href="/student/search">Student Book Loans</a></li>
         </ul>
       </div>
