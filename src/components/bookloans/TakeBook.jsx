@@ -19,7 +19,7 @@ const TakeBook = () => {
     axios.get(`http://localhost:8082/student/list`).then(
       response => {
         setStudents(response.data);
-       
+
       }
     ).catch(
       error => {
@@ -51,6 +51,7 @@ const TakeBook = () => {
     axios.post(`http://localhost:8082/bookloan/loan/${inputData.bookName}/${inputData.studentId}/${inputData.librarianId}`).then(
       response => {
         console.log(response.data);
+        alert("Transaction Sucessfull")
       }
     ).catch(
       error => console.log(error)

@@ -27,7 +27,7 @@ const SideMenu = () => {
           <li><a className="dropdown-item" href="/book/search">Search Book</a></li>
   
           <li><a className="dropdown-item" href="/author">Save Authors</a></li>
-          <li><a className="dropdown-item" href="/author/search">Author Books</a></li>
+          <li><a className="dropdown-item" href="/author/search">Search By Author</a></li>
         </ul>
       </div>
       <div className='dropend'>
