@@ -8,8 +8,6 @@ const TakeBook = () => {
   const [students, setStudents] = useState([]);
   const [librarians, setLibrarians] = useState([]);
 
-  const [status,setStatus] = useState();
-
   const [inputData, setInputData] = useState({
     studentId: 0,
     librarianId: 0,
@@ -22,12 +20,12 @@ const TakeBook = () => {
     axios.get(`http://localhost:8082/student/list`).then(
       response => {
         setStudents(response.data);
-        setStatus(true);
+       
       }
     ).catch(
       error => {
         console.log(error);
-        setStatus(false);
+        
       }
     )
 
@@ -132,8 +130,8 @@ const TakeBook = () => {
         </div>
       </div>
       <div className='card' id='cardTitle'>
-        <div className='card-body' id="sucess">
-                
+        <div className='card-body'>
+              <p>display sucessful message and response data here</p>
         </div>
       </div>
     </div>

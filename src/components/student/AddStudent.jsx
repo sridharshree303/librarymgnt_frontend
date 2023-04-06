@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const AddStudent = () => {
+
+  const [student, setStudent] = useState({
+    "studentId": 0,
+    "sname": ""
+  })
   return (
     <div>
       <h2 className='display-3'>Add Student</h2>
