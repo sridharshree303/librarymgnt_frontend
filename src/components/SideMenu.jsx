@@ -23,11 +23,10 @@ const SideMenu = () => {
       <div className='dropend'>
         <button className='btn NoColor dropend dropdown-toggle' type='button' id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Books</button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a className="dropdown-item" href="/book">Add Book</a></li>
+          <li><a className="dropdown-item" href="/book">Save Books</a></li>
           <li><a className="dropdown-item" href="/book/search">Search Book</a></li>
-          <li><a className="dropdown-item" href="/book">Book's List</a></li>
-          <li><a className="dropdown-item" href="/author">Save Author</a></li>
-          <li><a className="dropdown-item" href="/author">Author's List</a></li>
+  
+          <li><a className="dropdown-item" href="/author">Save Authors</a></li>
           <li><a className="dropdown-item" href="/author/search">Author Books</a></li>
         </ul>
       </div>
