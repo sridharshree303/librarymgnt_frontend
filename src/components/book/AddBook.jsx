@@ -80,7 +80,7 @@ const AddBook = () => {
       {/* ----------Add book -------------- */}
       <div className='card' id='cardTitle'>
         <div className='card-body'>
-          <h1 className='display-6 card-title'>Add Student Info </h1>
+          <h1 className='display-6 card-title'>Save Book Info </h1>
         </div>
       </div>
       <div className='card' id='cardTitle'>
